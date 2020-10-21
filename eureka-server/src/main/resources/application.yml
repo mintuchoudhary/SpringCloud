@@ -1,0 +1,10 @@
+#SEtup to start eureka server without any service application registration
+
+server:
+  port: 7777
+eureka:
+  instance:
+    hostname: localhost
+  client:
+#    registerWithEureka: false
+#    fetchRegistry: false

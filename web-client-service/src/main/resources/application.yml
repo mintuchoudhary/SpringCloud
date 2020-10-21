@@ -1,0 +1,10 @@
+#SEtup to start eureka server without any service application registration
+server:
+  port: 7777
+eureka:
+  instance:
+    hostname: localhost
+  client:
+ #   registerWithEureka: false #specifies that this server should not be registered to the service client itself.
+ #   fetchRegistry: false #specifies that the server should not fetch the registered information to itself.
+#NOTE - disabled below 2 properties to register hello-service (defined in bootstrap.properties)
